@@ -1,0 +1,48 @@
+<div [class.buttonLogin]="buttonLogin">
+  <div [class.buttonCadastro]="buttonCadastro">
+    <div class="container">
+      <div class="logo">
+        <a (click)="Home()"
+          ><img src="assets/img/logoslowfu.png" alt="SlowFu"
+        /></a>
+      </div>
+      <div class="form">
+        <div class="label_input">
+          <label for="email">Usuário (e-mail):</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail de usuário"
+            required
+            #email
+          />
+        </div>
+        <div class="label_input">
+          <label for="password">Senha:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite sua senha de usuário"
+            required
+            #senha
+          />
+        </div>
+        <button
+          class="login"
+          type="submit"
+          (click)="Login(email.value, senha.value)"
+        >
+          Entrar
+        </button>
+        <a (click)="Cadastro()" class="cadastrar"
+          >Não tem conta? Cadastre-se!</a
+        >
+      </div>
+      <div *ngIf="showPreloader" class="preloader">
+        <img src="../../assets/img/gif/Slowfu.gif" alt="Preloader">
+      </div>
+    </div>
+  </div>
+</div>

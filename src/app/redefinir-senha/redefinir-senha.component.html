@@ -1,0 +1,38 @@
+<div class="container">
+  <h1 class="h1">ATENÇÃO! VOCÊ ESTÁ PRESTES A DELETAR SUA CONTA</h1>
+  <h2 class="h2">
+    Pense bem antes de fazer isso, pois essa ação não tem volta.
+  </h2>
+  <div *ngIf="showPreloader" class="preloader">
+    <img src="../../assets/img/gif/Slowfu.gif" alt="Preloader" />
+  </div>
+  <div class="form">
+    <div class="label_input">
+      <label for="">Confirme essa ação com sua senha:</label>
+      <input
+        type="password"
+        id="senha"
+        name="senha"
+        required
+        placeholder="senha"
+        #senhaTest
+      />
+    </div>
+    <div class="buttons">
+      <div class="botao_esquerdo">
+        <button
+          class="botao_esquerda"
+          href="../perfil-proprio-usuario/"
+          (click)="Cancelar()"
+        >
+          <a href="../perfil-proprio-usuario/">Cancelar</a>
+        </button>
+      </div>
+      <div class="botao_direito">
+        <button class="botao_direita" (click)="DeletarUsuario(senhaTest.value)">
+          Deletar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

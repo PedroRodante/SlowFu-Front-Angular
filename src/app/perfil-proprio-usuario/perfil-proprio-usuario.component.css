@@ -1,0 +1,162 @@
+.preloader{
+  position: fixed;
+  z-index: 10;
+}
+
+.preloader img{
+  width: 120px;
+  padding: 100px;
+  filter: drop-shadow(0 10px 10px #3333337f);
+}
+
+.container{
+  padding: 10px 0;
+  animation: entrada 1s;
+}
+
+@keyframes entrada {
+  0% {
+    transform: translateX(1000px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.card {
+  max-width: 360px;
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo{
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  font-size: 22px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.subTitulo{
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.esquerda {
+  display: flex;
+  flex-direction: column;
+}
+
+.direita {
+  display: flex;
+  justify-content: right;
+  align-items: start;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.informacoes_inferiores {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.img_card {
+  margin-bottom: 15px;
+  opacity: 70%;
+  padding: 10px 30px;
+  border: none;
+  filter: drop-shadow(0 2px 4px #333333);
+  border-radius: 10px;
+  width: 140px;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 15px;
+  color: #333;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.botao_senha {
+  background-color: #3fb592;
+  border: 2px solid #3fb592;
+  color: #333;
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+  filter: drop-shadow(0 2px 4px #333333);
+}
+
+.botao_deletar {
+  background-color: #c7e4bb;
+  border: 2px solid #333;
+  color: #333;
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+}
+
+.botao_alterar_conta {
+  background-color: #c7e4bb;
+  border: 2px solid #333;
+  color: #333;
+  width: 120px;
+  height: 30px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.botao_alterar_conta img{
+    width: 12px;
+    height: 12px;
+  }
+
+button:active {
+  filter: blur(0 2px 5px #333333);
+  transform: scale(0.8);
+  transition: 0.1s ease-in;
+}
+
+.botao_sair{
+  background-color: #c7e4bb;
+  border: 2px solid #333;
+  color: #333;
+  padding: 5px 20px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+a:active {
+  filter: blur(0 2px 5px #333333);
+  transform: scale(0.8);
+  transition: 0.1s ease-in;
+}

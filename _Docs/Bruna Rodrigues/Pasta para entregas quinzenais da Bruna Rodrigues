@@ -1,0 +1,76 @@
+Entrega realizada em 28/02 -  Primeira entrega do Projeto
+
+Optamos por seguir com o projeto do SlowFu, que foi iniciado por um dos nossos integrantes no semestre passado. (Pedro Rodante).
+Para aqueles que ainda não conhecem, o SlowFu é uma iniciativa que busca promover a conscientização sobre a importância da alimentação saudável e sustentável. O projeto incentiva o consumo de alimentos frescos e naturais, produzidos de forma responsável e com baixo impacto ambiental. Todos por pequenos produtores, que em nosso aplicativo, poderão postar seus alimentos diretamente para a venda. Tendo assim, a possibilidade de aumentar sua renda acabando com um "atravessador"
+A escolha do projeto foi baseada em diversas razões. Em primeiro lugar, o tema é de extrema relevância nos dias de hoje, uma vez que a busca por um estilo de vida mais saudável e consciente tem se tornado cada vez mais comum entre a população. Além disso, o SlowFu oferece diversas oportunidades de aprimoramento das habilidades do grupo, baseado nas funcionalidades que imaginamos.
+
+Conforme alinhado, com o professor Victor, às 6 funcionalidades do projeto são:
+1. Cadastro e acesso de usuário;
+2. Alteração e delete da conta do usuário;
+3. Cadastro e acesso postagem;
+4. Alteração e delete de postagem;
+5. Filtro de busca de postagem;
+6. Geolocalização pela conexão de internet (de postagem)
+
+Refletimos um pouco também sobre os requisitos do nosso sistema:
+ - Requisitos funcionais
+     - Cadastro
+     - Visualização das postagens
+     - Filtro de busca.
+- Requisitos não funcionais
+     - Geolocalização
+     - Cadastro e acesso de usuário de forma segura
+     - Eficiência nas buscas
+     - Estabilidade no sistema
+
+Entrega realizada em 18/03
+
+O time desenvolveu todos juntos a primeira versão do Manifesto e a versão atualizada, conforme abaixo:
+
+Manifesto SlowFu
+Versão 1.0
+
+
+Manifesto SlowFu:
+
+
+Aqui você fortalece a policultura familiar e muda a lógica de como você compra e consome seus alimentos.
+
+
+Versão 1.1 
+
+
+Manifesto SlowFu:
+
+
+Dê match com seus alimentos favoritos! No SlowFu você fortalece a policultura familiar e muda a lógica de como você compra e consome seus alimentos.
+
+Depois desenvolvemos juntos também o Mapa de Empatia e a Persona do Projeto, inclusive a Aline ficou responsável pela criação da Persona, mas juntas validamos o conteúdo do texto.
+
+Realizamos na aula do Chico uma pesquisa para levantamento de dados para criar a segunda Persona, com base nisso chegamos a criação de um segundo Mapa de Empatia e segunda Persona.
+
+- Entrega individual: conforme alinhado com o time, iniciei a criação do mapa de empatia e depois avaliei com a Aline.
+
+Alinhei com o time de entregar o Wireframe e já está concluído.
+
+Entrega 05/04
+
+Desenvolvemos e apresentamos para o Chico dia 29/04 as personas, uma sem base de pesquisa e outra após a pesquisa,  no nosso caso de comprador e vendedor e também desenhamos os mapas de jornada dos usuários.
+
+Além disso, ainda temos algumas telas que já estão funcionando no angular.
+
+Entrega 02/05
+
+Para essa entrega o time contou com a ajuda da Aline no desenvolvimento e descrição dos processos e montagem solicitadas pelo professor Aimar.
+
+Entrega 21/05
+
+Nessa última etapa revisamos o documento com informações solicitadas pelo professor Chico, o cadastro e login estão sendo validados também e na próxima semana faremos teste com o Chico.
+
+Entrega 31/05
+
+Conforme últiuma aula em 24/05 ficamos para finalizar o documento de UX solicitado pelo professor Chico e foi anexado no github hoje 31/05 essa entrega.
+
+05/06
+
+Como tinhamos telas para ajustar o documento foi editado e foi entregue hoje 05/06, o prazo do professor foi 07/06.

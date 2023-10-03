@@ -1,0 +1,154 @@
+<div class="container">
+  <h1 class="topo">Poste seu Produto!</h1>
+  <div class="form">
+    <div class="label_input">
+    </div>
+    <div class="label_input">
+      <label for="valor">Tipo:</label>
+      <select
+        class="label_input select_input"
+        name="tipo"
+        id="tipo"
+        required
+        #tipo
+      >
+        <option value="abacate">Abacate</option>
+        <option value="abacaxi">Abacaxi</option>
+        <option value="abobora">Abóbora</option>
+        <option value="abobrinha">Abobrinha</option>
+        <option value="acai">Açaí</option>
+        <option value="acelga">Acelga</option>
+        <option value="agriao">Agrião</option>
+        <option value="alface">Alface</option>
+        <option value="ameixa">Ameixa</option>
+        <option value="amora">Amora</option>
+        <option value="arroz">Arroz</option>
+        <option value="aspargo">Aspargo</option>
+        <option value="azeite">Azeite</option>
+        <option value="azeitona">Azeitona</option>
+        <option value="banana">Banana</option>
+        <option value="batata">Batata</option>
+        <option value="beringela">Beringela</option>
+        <option value="beterraba">Beterraba</option>
+        <option value="brocolis">Brócolis</option>
+        <option value="cacau">Cacau</option>
+        <option value="cafe">Café</option>
+        <option value="caju">Cajú</option>
+        <option value="carambola">Carambola</option>
+        <option value="cebola">Cebola</option>
+        <option value="cebolinha">Cebolinha</option>
+        <option value="cenora">Cenoura</option>
+        <option value="cereja">Cereja</option>
+        <option value="chuchu">Chuchu</option>
+        <option value="coco">Coco</option>
+        <option value="coentro">Coentro</option>
+        <option value="cogumelo">Cogumelo</option>
+        <option value="couve">Couve</option>
+        <option value="ervilha">Ervilha</option>
+        <option value="espinafre">Espinafre</option>
+        <option value="feijao">Feijão</option>
+        <option value="figo">Figo</option>
+        <option value="framboesa">Framboesa</option>
+        <option value="goiaba">Goiaba</option>
+        <option value="granola">Granola</option>
+        <option value="groselha">Groselha</option>
+        <option value="inhame">Inhame</option>
+        <option value="jabuticaba">Jabuticaba</option>
+        <option value="jaca">Jaca</option>
+        <option value="kiwi">Kiwi</option>
+        <option value="laranja">Laranja</option>
+        <option value="lichia">Lichia</option>
+        <option value="limao">Limão</option>
+        <option value="linhaca">Linhaça</option>
+        <option value="mandioca">Mandioca</option>
+        <option value="manga">Manga</option>
+        <option value="maracuja">Maracujá</option>
+        <option value="mel">Mel</option>
+        <option value="melancia">Melancia</option>
+        <option value="melao">Melão</option>
+        <option value="milho">Milho</option>
+        <option value="morango">Morango</option>
+        <option value="pepino">Pepino</option>
+        <option value="pessego">Pêssego</option>
+        <option value="pimenta">Pimenta</option>
+        <option value="pimentao">Pimentão</option>
+        <option value="rabanete">Rabanete</option>
+        <option value="repolho">Repolho</option>
+        <option value="roma">Romã</option>
+        <option value="rucula">Rúcula</option>
+        <option value="tamarindo">Tamarindo</option>
+        <option value="tomate">Tomate</option>
+        <option value="uva">Uva</option>
+        <option value="outros">Outros / Variedades</option>
+      </select>
+    </div>
+    <div class="label_input">
+      <label for="valor">Valor do quilo (R$):</label>
+      <input
+        type="number"
+        id="valor"
+        name="valor"
+        required
+        placeholder="Digite o valor do seu produto"
+        #valor
+      />
+    </div>
+    <div class="label_input">
+      <label for="descricao">O que é o seu produto?</label>
+      <input
+        class="textarea"
+        type="text"
+        id="descricao"
+        name="descricao"
+        required
+        placeholder="Descreva seu produto em uma frase"
+        #descricao/>
+    </div>
+    <div *ngIf="showPreloader" class="preloader">
+      <img src="../../assets/img/gif/Slowfu.gif" alt="Preloader">
+    </div>
+    <button
+      class="buttons"
+      (click)="
+        CriarPost(valor.value, tipo.value, descricao.value)
+      "
+    >
+      P U B L I C A R
+    </button>
+  </div>
+  <div class="h1_seus_posts"><h1>Seu Posts</h1></div>
+  <div class="card" *ngFor="let post of posts">
+    <div class="informacoes">
+      <div class="informacoes_esquerda">
+        <h2 #tipo>{{ post.tipo }}</h2>
+        <div class="descricao">
+          <p #descricao>
+            {{ post.descricao }}
+          </p>
+        </div>
+      </div>
+      <div class="informacoes_direita">
+        <p #data>{{ post.data }}</p>
+        <img
+          class="img_card"
+          src="../../assets/img/posts/{{ post.tipo }}.jpg"
+          alt=""
+        />
+        <p #valor>R${{ post.valor }} KG</p>
+      </div>
+    </div>
+    <div class="buttons_posts">
+      <div class="botao_esquerdo">
+        <textarea class="postID" #postID>{{ post.postID }}</textarea>
+        <button class="botao_excluir" (click)="DeletarPost(postID.value)">
+          Excluir
+        </button>
+      </div>
+      <div class="botao_direito">
+        <button class="botao_editar">Editar</button>
+      </div>
+    </div>
+  </div>
+  <div class="espaco_footer"></div>
+</div>
+<app-footer></app-footer>

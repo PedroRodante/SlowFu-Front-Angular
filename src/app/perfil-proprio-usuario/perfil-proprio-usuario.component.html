@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="card">
+    <h1 class="titulo">Seus dados</h1>
+    <h2 class="subTitulo">Eles serão usados para os posts</h2>
+    <img class="img_card" src="../../assets/img/perfil-verde.png" alt="" />
+    <div class="informacoes_inferiores">
+      <h2>{{nome}}</h2>
+      <p>{{email}}</p>
+      <p>Tel: {{telefone}}</p>
+    </div>
+    <div class="buttons">
+      <div class="botao_esquerdo">
+        <a href="../perfil-edicao/"
+          ><button class="botao_senha">Alterar Dados</button></a
+        >
+      </div>
+      <div class="botao_direito">
+        <button class="botao_deletar" (click)="DeletarUsuario()">Deletar Conta</button>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="botao_sair" (click)="Sair()">Sair</button>
+    </div>
+    <div *ngIf="showPreloader" class="preloader">
+      <img src="../../assets/img/gif/Slowfu.gif" alt="Preloader">
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

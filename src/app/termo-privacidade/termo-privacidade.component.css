@@ -1,0 +1,40 @@
+.container{
+  padding: 10px 0;
+  animation: entrada 4s;
+}
+
+@keyframes entrada {
+  0% {
+    transform: translateY(1000px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.logo img{
+    width: 250px;
+    filter: drop-shadow(0 2px 4px #3333337f);
+  }
+
+.texto_termo{
+    padding: 20px 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.link{
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    background-color: #3fb592;
+    filter: drop-shadow(0 2px 4px #3333337f);
+}
+
+.link:active {
+    transition: 0.1s ease-in;
+    background-color: #3fb592;
+    border: 2px solid #3fb592;
+    transform: scale(0.9);
+  }

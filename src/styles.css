@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+  font-family: "Poppins";
+  color: #333;
+}
+
+body {
+  background-color: #c7e4bb;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.container h1{
+  font-family: "Poppins";
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h2 {
+  margin-top: 25px;
+  color: #333;
+  font-size: 15px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.erro{
+  display: none;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@media (min-width:850px)
+{
+  .app-root{
+    display: none;
+  }
+
+  .erro{
+    padding: 100px 300px;
+    display: flex;
+    text-align: center;
+  }
+
+  .erro h1{
+    font-family: "Poppins";
+    font-weight: bolder;
+  }
+}
